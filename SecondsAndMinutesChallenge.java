@@ -3,7 +3,7 @@ public class SecondsAndMinutesChallenge {
         System.out.println(getDurationString(-3945));
         System.out.println(getDurationString(-65,45));
         System.out.println(getDurationString(65,145));
-        System.out.println(getDurationString(65,45));
+        System.out.println(getDurationString(65,40));
         System.out.println(getDurationString(3945));
     }
     public static String getDurationString(int seconds){
@@ -13,7 +13,7 @@ public class SecondsAndMinutesChallenge {
         }
         else {
             int minutes=seconds/60;
-            return getDurationString(seconds/60,seconds%60);
+            return getDurationString(minutes,seconds%60);
 
         }
 
